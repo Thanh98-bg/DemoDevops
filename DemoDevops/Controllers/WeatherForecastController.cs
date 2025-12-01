@@ -24,7 +24,7 @@ namespace DemoDevops.Controllers
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-                TemperatureC = Random.Shared.Next(-20, 44),
+                TemperatureC = Random.Shared.Next(-20, 46),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
